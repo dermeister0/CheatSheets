@@ -7,3 +7,17 @@
     net start wuauserv
 
 Source: [Microsoft Community](https://answers.microsoft.com/en-us/windows/forum/windows_xp-files/is-it-safe-to-delete-files-under/8d98d924-b0b1-4f2b-bb4b-13f38126c588)
+
+## Read Event Log
+
+[PowerShell](https://msdn.microsoft.com/en-us/powershell/reference/4.0/microsoft.powershell.management/get-eventlog):
+
+```
+Get-EventLog Application | select -First 100
+```
+
+[wevtutil](https://technet.microsoft.com/en-us/library/dd310329.aspx):
+
+```
+wevtutil qe Application /c:100 /f:text
+```
