@@ -43,3 +43,14 @@ Get-PSDrive C | Select-Object Used, Free
 ```
 
 Source: [StackOverflow](http://stackoverflow.com/a/29992160/991267)
+
+## Add permanent environment variable
+
+```
+$additionalPath = 'C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd'
+$currentValue = [Environment]::GetEnvironmentVariable('Path', 'Machine')
+$currentValue = [Environment]::GetEnvironmentVariable('Path', [System.EnvironmentVariableTarget]::Machine)
+[Environment]::SetEnvironmentVariable('Path', "$currentValue;$additionalPath", [System.EnvironmentVariableTarget]::Machine)
+```
+
+Source: [StackOverflow](http://stackoverflow.com/a/2571200/991267)
