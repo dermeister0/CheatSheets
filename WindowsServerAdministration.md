@@ -26,7 +26,11 @@ wevtutil qe Application /c:100 /f:text
 
 ```
 New-Item C:\Workspace -ItemType Directory
-New-SmbShare -Name Workspace -Path C:\Workspace
+New-SmbShare -Name Workspace -Path C:\Workspace -FullAccess administrator
+```
+
+```
+Remove-SmbShare Workspace
 ```
 
 Source: [I Love PowerShell](http://ilovepowershell.com/2012/09/19/create-network-share-with-powershell-3/)
