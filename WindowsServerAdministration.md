@@ -21,3 +21,13 @@ Get-EventLog Application | select -First 100
 ```
 wevtutil qe Application /c:100 /f:text
 ```
+
+## Create Network Share
+
+```
+New-Item C:\Workspace -ItemType Directory
+New-SmbShare -Name Workspace -Path C:\Workspace
+```
+
+Source: [I Love PowerShell](http://ilovepowershell.com/2012/09/19/create-network-share-with-powershell-3/)
+[Documentation](https://technet.microsoft.com/itpro/powershell/windows/smbshare/new-smbshare)
