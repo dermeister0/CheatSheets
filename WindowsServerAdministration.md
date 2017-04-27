@@ -35,3 +35,11 @@ Remove-SmbShare Workspace
 
 Source: [I Love PowerShell](http://ilovepowershell.com/2012/09/19/create-network-share-with-powershell-3/)
 [Documentation](https://technet.microsoft.com/itpro/powershell/windows/smbshare/new-smbshare)
+
+## Get Disk Free Space
+
+```
+Get-PSDrive C | Select-Object Used, Free
+```
+
+Source: [StackOverflow](http://stackoverflow.com/a/29992160/991267)
