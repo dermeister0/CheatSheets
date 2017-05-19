@@ -64,3 +64,12 @@ Set-CimInstance $drive -Arguments @{DriveLetter='E:'}
 
 
 Source: [Scripting Guy](https://blogs.technet.microsoft.com/heyscriptingguy/2011/03/14/change-drive-letters-and-labels-via-a-simple-powershell-command/)
+
+## Create and format volume on RAW partition
+
+```
+Get-Disk | where PartitionStyle -eq 'RAW' | Initialize-Disk -PartitionStyle GPT -PassThru | New-Partition -A
+ssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -Confirm:$false
+```
+
+Source: [Scripting Guy](https://blogs.technet.microsoft.com/heyscriptingguy/2013/05/29/use-powershell-to-initialize-raw-disks-and-to-partition-and-format-volumes/)
