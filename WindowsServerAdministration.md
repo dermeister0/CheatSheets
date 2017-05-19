@@ -8,7 +8,7 @@
 
 Source: [Microsoft Community](https://answers.microsoft.com/en-us/windows/forum/windows_xp-files/is-it-safe-to-delete-files-under/8d98d924-b0b1-4f2b-bb4b-13f38126c588)
 
-## Read Event Log
+## Read event log
 
 [PowerShell](https://msdn.microsoft.com/en-us/powershell/reference/4.0/microsoft.powershell.management/get-eventlog):
 
@@ -22,7 +22,7 @@ Get-EventLog Application | select -First 100
 wevtutil qe Application /c:100 /f:text
 ```
 
-## Create Network Share
+## Create network share
 
 ```
 New-Item C:\Workspace -ItemType Directory
@@ -36,7 +36,7 @@ Remove-SmbShare Workspace
 Source: [I Love PowerShell](http://ilovepowershell.com/2012/09/19/create-network-share-with-powershell-3/)
 [Documentation](https://technet.microsoft.com/itpro/powershell/windows/smbshare/new-smbshare)
 
-## Get Disk Free Space
+## Get disk free Space
 
 ```
 Get-PSDrive C | Select-Object Used, Free
@@ -54,3 +54,13 @@ $currentValue = [Environment]::GetEnvironmentVariable('Path', [System.Environmen
 ```
 
 Source: [StackOverflow](http://stackoverflow.com/a/2571200/991267)
+
+## Change drive letter
+
+```
+$drive = Get-CimInstance Win32_Volume -Filter "DriveLetter = 'D:'"
+Set-CimInstance $drive -Arguments @{DriveLetter='E:'}
+```
+
+
+Source: [Scripting Guy](https://blogs.technet.microsoft.com/heyscriptingguy/2011/03/14/change-drive-letters-and-labels-via-a-simple-powershell-command/)
