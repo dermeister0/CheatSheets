@@ -2,6 +2,8 @@
 
 [.NET](DotNet.md)
 
-[Windows Server Administration](WindowsServerAdministration.md)
-
 [Hyper-V](HyperV.md)
+
+[SQL Server Administration](SqlServerAdministration.md)
+
+[Windows Server Administration](WindowsServerAdministration.md)
