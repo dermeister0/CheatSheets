@@ -73,3 +73,11 @@ ssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -Confirm:$fals
 ```
 
 Source: [Scripting Guy](https://blogs.technet.microsoft.com/heyscriptingguy/2013/05/29/use-powershell-to-initialize-raw-disks-and-to-partition-and-format-volumes/)
+
+## Disable Windows Defender realtime protection
+
+```
+Set-MpPreference -DisableRealtimeMonitoring $true
+```
+
+Source: [Thomas Maurer](http://www.thomasmaurer.ch/2016/07/how-to-disable-and-configure-windows-defender-on-windows-server-2016-using-powershell/)
