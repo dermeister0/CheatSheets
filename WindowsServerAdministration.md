@@ -24,6 +24,7 @@ wevtutil qe Application /c:100 /f:text
 
 ## Create network share
 
+
 ```
 New-Item C:\Workspace -ItemType Directory
 New-SmbShare -Name Workspace -Path C:\Workspace -FullAccess administrator
@@ -81,3 +82,17 @@ Set-MpPreference -DisableRealtimeMonitoring $true
 ```
 
 Source: [Thomas Maurer](http://www.thomasmaurer.ch/2016/07/how-to-disable-and-configure-windows-defender-on-windows-server-2016-using-powershell/)
+
+## Check License Status
+
+```
+# Display license information.
+slmgr.vbs /dli
+```
+
+```
+# Display expiration ddate for current license state.
+slmgr.vbs /xpr
+```
+
+Source: [SQL Panda](http://www.sqlpanda.com/2012/07/check-windows-server-core-license.html)
