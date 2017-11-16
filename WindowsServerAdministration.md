@@ -83,7 +83,7 @@ Set-MpPreference -DisableRealtimeMonitoring $true
 
 Source: [Thomas Maurer](http://www.thomasmaurer.ch/2016/07/how-to-disable-and-configure-windows-defender-on-windows-server-2016-using-powershell/)
 
-## Check License Status
+## Check license status
 
 ```
 # Display license information.
@@ -97,7 +97,7 @@ slmgr.vbs /xpr
 
 Source: [SQL Panda](http://www.sqlpanda.com/2012/07/check-windows-server-core-license.html)
 
-## Show Windows Version
+## Show Windows version
 
 ```
 Get-CimInstance Win32_OperatingSystem | select Caption, Version, BuildNumber
