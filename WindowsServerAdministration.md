@@ -96,3 +96,11 @@ slmgr.vbs /xpr
 ```
 
 Source: [SQL Panda](http://www.sqlpanda.com/2012/07/check-windows-server-core-license.html)
+
+## Show Windows Version
+
+```
+Get-CimInstance Win32_OperatingSystem | select Caption, Version, BuildNumber
+```
+
+Source: [StackOverflow](https://stackoverflow.com/a/23622106/991267)
