@@ -37,6 +37,14 @@ Remove-SmbShare Workspace
 Source: [I Love PowerShell](http://ilovepowershell.com/2012/09/19/create-network-share-with-powershell-3/)
 [Documentation](https://technet.microsoft.com/itpro/powershell/windows/smbshare/new-smbshare)
 
+## Grant access to network share
+
+```
+Grant-SmbShareAccess –Name Workspace –AccountName Administrator –AccessRight Full
+```
+
+Source: [TechNet](https://blogs.technet.microsoft.com/josebda/2012/06/27/the-basics-of-smb-powershell-a-feature-of-windows-server-2012-and-smb-3-0/)
+
 ## Get disk free space
 
 ```
