@@ -25,7 +25,7 @@ wevtutil qe Application /c:100 /f:text
 ## Read Application and Services Logs
 
 ```
-Get-WinEvent -LogName 'Microsoft-Windows-Dsc/Operational'
+Get-WinEvent -LogName 'Microsoft-Windows-Dsc/Operational' -MaxEvents 100
 ```
 
 Source: [MCB Systems](https://www.mcbsys.com/blog/2011/04/powershell-get-winevent-vs-get-eventlog/)
