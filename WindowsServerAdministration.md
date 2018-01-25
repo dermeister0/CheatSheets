@@ -56,6 +56,12 @@ $currentValue = [Environment]::GetEnvironmentVariable('Path', [System.Environmen
 
 Source: [StackOverflow](http://stackoverflow.com/a/2571200/991267)
 
+## Update environment variable from registry
+
+```
+$env:PATH = (@(,[Environment]::GetEnvironmentVariable('PATH', 'Machine') -Split ';') + @([Environment]::GetEnvironmentVariable('PATH', 'User') -Split ';') | Select -Unique) -Join ';'
+```
+
 ## Change drive letter
 
 ```
@@ -101,6 +107,8 @@ Source: [SQL Panda](http://www.sqlpanda.com/2012/07/check-windows-server-core-li
 
 ```
 Get-CimInstance Win32_OperatingSystem | select Caption, Version, BuildNumber
+
+Get-ComputerInfo -Property Windows*
 ```
 
 Source: [StackOverflow](https://stackoverflow.com/a/23622106/991267)
