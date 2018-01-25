@@ -22,6 +22,14 @@ Get-EventLog Application | select -First 100
 wevtutil qe Application /c:100 /f:text
 ```
 
+## Read Application and Services Logs
+
+```
+Get-WinEvent -LogName 'Microsoft-Windows-Dsc/Operational'
+```
+
+Source: [MCB Systems](https://www.mcbsys.com/blog/2011/04/powershell-get-winevent-vs-get-eventlog/)
+
 ## Create network share
 
 
