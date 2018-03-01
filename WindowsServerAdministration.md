@@ -128,3 +128,11 @@ Get-ComputerInfo -Property Windows*
 ```
 
 Source: [StackOverflow](https://stackoverflow.com/a/23622106/991267)
+
+## List local users
+
+```
+Get-CimInstance Win32_UserAccount
+```
+
+Source: [TechNet](https://gallery.technet.microsoft.com/scriptcenter/827623f5-eb55-4035-8f57-25c4afb444cd)
