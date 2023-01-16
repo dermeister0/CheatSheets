@@ -10,6 +10,12 @@ mysqldump.exe -u root -p mydb > mydb.sql
 mysqldump -h 127.0.0.1 -P 3306 -u root -p mydb > mydb.sql
 ```
 
+### MySQL 5
+
+```
+mysqldump -h 127.0.0.1 -P 3306 -u root -p --column-statistics=0 mydb > mydb.sql
+```
+
 ## Restore
 
 ```
