@@ -2,6 +2,10 @@
 
 ## Back Up
 
+```sh
+sudo apt install mysql-client-core-8.0
+```
+
 ```
 mysqldump.exe -u root -p mydb > mydb.sql
 ```
