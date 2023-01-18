@@ -57,3 +57,5 @@ All files:
 select d.name [DB Name], m.name [File Name], m.size * 8 / 1024 / 1024 [Size, GiB]
 from sys.master_files m JOIN sys.databases d ON d.database_id = m.database_id and m.type in (0, 1);
 ```
+
+Source: [StackOverflow](https://stackoverflow.com/a/43472838/991267)
