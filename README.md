@@ -10,6 +10,8 @@
 
 [PowerShell](PowerShell.md)
 
+[SSH][SSH.md]
+
 [SQL Server Administration](SqlServerAdministration.md)
 
 [WinRM](WinRM.md)
