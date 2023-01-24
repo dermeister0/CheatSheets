@@ -10,7 +10,7 @@
 
 [PowerShell](PowerShell.md)
 
-[SSH][SSH.md]
+[SSH](SSH.md)
 
 [SQL Server Administration](SqlServerAdministration.md)
 
