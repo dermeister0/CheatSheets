@@ -8,6 +8,8 @@
 
 [PostgreSQL Administration](PostgreSQL.md)
 
+[PowerShell](PowerShell.md)
+
 [SQL Server Administration](SqlServerAdministration.md)
 
 [WinRM](WinRM.md)
