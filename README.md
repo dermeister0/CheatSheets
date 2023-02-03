@@ -6,7 +6,7 @@
 
 [MySQL Administration](MySQL.md)
 
-[PGP and OpenSSL](PGP and OpenSSL.md)
+[PGP and OpenSSL](<PGP and OpenSSL.md>)
 
 [PostgreSQL Administration](PostgreSQL.md)
 
